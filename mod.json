@@ -7,8 +7,8 @@
 		"ios": "2.2081"
 	},
 	"version": "v1.0.0",
-	"id": "cattww.smart-practice-mode",
-	"name": "Smart Practice Mode",
+	"id": "cattww.smarter-practice-mode",
+	"name": "Smarter Practice Mode",
 	"developer": "cattww",
 	"description": "Replaces vanilla auto-checkpoints with an intelligent system that reads physical player states.",
 	"repository": "https://github.com/cattww/smart-practice-mode",
