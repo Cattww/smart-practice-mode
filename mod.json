@@ -7,11 +7,11 @@
 		"ios": "2.2081"
 	},
 	"version": "v1.0.0",
-	"id": "cattw21-g.smart-practice",
-	"name": "Smart Practice",
-	"developer": "cattw21-g",
+	"id": "cattww.smart-practice-mode",
+	"name": "Smart Practice Mode",
+	"developer": "cattww",
 	"description": "Replaces vanilla auto-checkpoints with an intelligent system that reads physical player states.",
-	"repository": "https://github.com/cattw21-g/smart-practice",
+	"repository": "https://github.com/cattww/smart-practice-mode",
 	"tags": [
 		"gameplay",
 		"enhancement",
