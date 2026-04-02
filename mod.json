@@ -16,31 +16,5 @@
 		"gameplay",
 		"enhancement",
 		"utility"
-	],
-	"settings": {
-		"smart-timer": {
-			"name": "Checkpoint Timer",
-			"description": "Seconds between checkpoints. Lower is faster.",
-			"type": "float",
-			"default": 1.15,
-			"min": 0.5,
-			"max": 3.0,
-			"control": {
-				"slider": true,
-				"slider-step": 0.05
-			}
-		},
-		"safe-distance": {
-			"name": "Minimum Distance",
-			"description": "Minimum distance between checkpoints.",
-			"type": "float",
-			"default": 280.0,
-			"min": 100.0,
-			"max": 500.0,
-			"control": {
-				"slider": true,
-				"slider-step": 10.0
-			}
-		}
-	}
+	]
 }
