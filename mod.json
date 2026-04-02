@@ -6,14 +6,40 @@
 		"android": "2.2081"
 	},
 	"version": "v1.0.0",
-	"id": "cattww.smart-practice-mode",
-	"name": "Smart Practice Mode",
+	"id": "cattw21-g.smart-practice",
+	"name": "Smart Practice",
 	"developer": "cattw21-g",
-	"description": "Replaces vanilla auto-checkpoints with an intelligent system that reads physical player states to prevent mid-air death loops.",
-	"repository": "https://github.com/cattww/smart-practice-mode",
+	"description": "Replaces vanilla auto-checkpoints with an intelligent system that reads physical player states.",
+	"repository": "https://github.com/cattw21-g/smart-practice",
 	"tags": [
 		"gameplay",
 		"enhancement",
 		"utility"
-	]
+	],
+	"settings": {
+		"smart-timer": {
+			"name": "Checkpoint Timer",
+			"description": "Seconds between checkpoints. Lower is faster.",
+			"type": "float",
+			"default": 1.15,
+			"min": 0.5,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.05
+			}
+		},
+		"safe-distance": {
+			"name": "Minimum Distance",
+			"description": "Minimum distance between checkpoints.",
+			"type": "float",
+			"default": 280.0,
+			"min": 100.0,
+			"max": 500.0,
+			"control": {
+				"slider": true,
+				"slider-step": 10.0
+			}
+		}
+	}
 }

@@ -13,7 +13,7 @@ Features include:
 
 # How to use
 
-To use the mod, simply enter Practice Mode and play normally. The mod automatically handles all checkpoint placements in the background.
+To use the mod, simply enter Practice Mode and play normally. You can adjust the timer and distance parameters in the mod's settings menu.
 
 <cy>**CRITICAL REQUIREMENT:**</c> You must disable the vanilla "Auto-Checkpoint" setting in the game's pause menu! \
-If you leave the default setting enabled, both systems will attempt to place checkpoints simultaneously, resulting in overlapping checkpoints.
+If you leave the default setting enabled, both systems will attempt to place checkpoints simultaneously, resulting in overlapping checkpoints and a severely cluttered screen.

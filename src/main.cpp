@@ -23,6 +23,8 @@ class $modify(SmartPracticeLayer, PlayLayer) {
                 "bigFont.fnt"
             );
 
+            m_fields->m_warningLabel->setID("warning-label"_spr);
+
             m_fields->m_warningLabel->setColor({ 255, 50, 50 });
             m_fields->m_warningLabel->setScale(0.5f);
             m_fields->m_warningLabel->setPosition({ winSize.width / 2.f, winSize.height - 30.f });
@@ -30,7 +32,7 @@ class $modify(SmartPracticeLayer, PlayLayer) {
 
             this->addChild(m_fields->m_warningLabel);
 
-            // TODO: add CCFadeOut so it doesn't overlap the progress bar on ultrawide monitors
+            // TODO: add CCFadeOut so it doesn't overlap progress bar on ultrawide monitors
         }
 
         return true;
@@ -45,8 +47,10 @@ class $modify(SmartPracticeLayer, PlayLayer) {
         // tick timer
         m_fields->m_smartTimer += dt;
 
-        // 1.15f feels better than 1.5 in fast parts
-        if (m_fields->m_smartTimer >= 1.15f) {
+        // 1.15 feels better than 1.5 in fast parts
+        float timerThreshold = static_cast<float>(Mod::get()->getSettingValue<double>("smart-timer"));
+
+        if (m_fields->m_smartTimer >= timerThreshold) {
             bool isSafe = true;
 
             if (m_player1->m_isDashing) isSafe = false;
@@ -66,8 +70,10 @@ class $modify(SmartPracticeLayer, PlayLayer) {
             }
 
             // distance check (280 is roughly 9 blocks)
+            float distThreshold = static_cast<float>(Mod::get()->getSettingValue<double>("safe-distance"));
             auto pos = m_player1->getPosition();
-            if (std::abs(pos.x - m_fields->m_lastCPPos.x) < 280.f) {
+
+            if (std::abs(pos.x - m_fields->m_lastCPPos.x) < distThreshold) {
                 isSafe = false;
             }
 
