@@ -1,6 +1,6 @@
 # What does it do
 
-Smart Practice fundamentally rewrites how Auto-Checkpoints function in Geometry Dash. \
+Smarter Practice Mode fundamentally rewrites how Auto-Checkpoints function in Geometry Dash. \
 The vanilla system operates on a blind timer, frequently resulting in checkpoints being placed directly over hazards or during high-velocity maneuvers, forcing the player into unavoidable death loops.
 
 This mod utilizes Geode and Cocos2d-x to read the player's physical state in real-time, ensuring checkpoints are only placed when the player is in a safe, neutral position.
